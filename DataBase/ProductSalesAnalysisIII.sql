@@ -9,11 +9,11 @@
 -- We also need to join with the Product table to get the product name.
 
 -- Approach:
--- 1. Join the Sales table with the Product table on product_id to get product names.
--- 2. Group the results by product_id and product_name.
--- 3. For each group, find the minimum year using the MIN() aggregate function.
--- 4. Select the product_id, product_name, and the calculated first_year.
--- 5. Order the results by product_id for consistent output.
+1. Join the Sales table with the Product table on product_id to get product names.
+2. Group the results by product_id and product_name.
+3. For each group, find the minimum year using the MIN() aggregate function.
+4. Select the product_id, product_name, and the calculated first_year.
+5. Order the results by product_id for consistent output.
 
 -- OPTIMIZED SOLUTION using MIN with GROUP BY
 SELECT 
