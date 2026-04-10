@@ -1,3 +1,9 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+using namespace std;
+
 class reformatDate {
 public:
     string reformatDate(string date) {
@@ -8,3 +14,11 @@ public:
         return to_string(year) + "-" + (month < 10 ? "0" + to_string(month) : to_string(month)) + "-" + (day < 10 ? "0" + to_string(day) : to_string(day));
     }
 };
+
+int main() {
+    reformatDate solution;
+    string date = "20th Oct 2052";
+    string result = solution.reformatDate(date);
+    cout << "Reformatted Date: " << result << endl;
+    return 0;
+}
