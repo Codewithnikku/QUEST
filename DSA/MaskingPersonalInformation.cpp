@@ -20,7 +20,6 @@ public:
         }
         else
         {
-            // Phone number
             string digits;
             for (char c : s)
             {

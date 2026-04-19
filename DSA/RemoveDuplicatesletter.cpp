@@ -6,7 +6,7 @@ using namespace std;
 
 
 
-class removeDuplicateLetters {
+class RemoveDuplicateLetters {
 public:
     string removeDuplicateLetters(string s) {
         vector<int> lastIndex(26, 0);
@@ -36,7 +36,7 @@ public:
 };
 
 int main(){
-    removeDuplicateLetters s;
+    RemoveDuplicateLetters s;
     string str = "cbacdcbc";
     cout << s.removeDuplicateLetters(str) << endl;
     return 0;
